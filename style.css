@@ -141,51 +141,54 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    padding: 150px;
 }
 
 .description-div {
+    margin-bottom: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-
 .description-div p {
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 20px;
-}
-
-.span {
-    font-weight: bold;
 }
 
 .description-div span {
     font-weight: bold;
+    font-style: italic;
+}
+.span {
+    font-weight: bold;
     text-decoration: underline;
 }
-
-.description-div svg {
-    width: 30px;
+.description-div i{
+    align-self: center;
 }
 
-.appointment-container button {
-    background-color: rgb(27, 95, 220);
+.appointment-button {
+    background-color: rgb(16, 65, 224);
     color: #ffffff;
     border: none;
     border-radius: 20px;
-    padding: 10px;
-    margin-left: 20px;
+    padding: 15px;
+    margin-top: 20px;
     font-weight: bold;
-    font-size: 16px;
-    width: 300px;
-    display: flex;
+    font-size: 22px;
     margin-bottom: 20px;
     box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.49);
     -webkit-box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.49);
     -moz-box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.49);
 }
-
-.appointment-container button svg {
-    margin-left: 10px;
+/* AppointmentSection Responsive */
+@media (max-width:768px) {
+    .description-div{
+        flex-direction: column;
+    }
+    .appointment-container{
+        padding: 10px;
+        padding-top: 20px;
+    }
 }
 
 /*----------------------ABOUT SECTION-2--------------- */
@@ -681,8 +684,11 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    flex-wrap: wrap;
 }
-
+.footer-section div{
+    padding: 10px;
+}
 .logo-title-card p {
     margin-top: 10px;
     font-size: 12px;
