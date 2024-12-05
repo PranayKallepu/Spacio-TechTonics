@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* ----------NAVBAR---------- */
+.main-nav {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    position: relative;
+    height: 70px;
+}
+
+.ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.ul li {
+    list-style-type: none;
+}
+
+.ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.book-appointment-button {
+    background-color: rgb(9, 9, 148);
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 8px;
+    box-shadow: 12px;
+    box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.49);
+    -webkit-box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.49);
+
+
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon i {
+    font-size: 30px;
+}
+/* Navbar Responsive */
+@media (max-width:600px) {
+    .ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #ffffff;
+        padding-top: 20px;
+        gap: 0;
+        overflow: hidden;
+    }
+
+    .ul li {
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menuList {
+        transition: all 0.5s;
+    }
+}
+
+/* All Common Sections */
+.all-right-para {
+    text-align: center;
+    font-size: 12px;
+}
+
+.title {
+    border-width: 0 0 0 5px;
+    border-style: solid;
+    border-color: red;
+    padding-left: 10px;
+}
+
+/*---------- Book Appointment SECTION-1----------- */
+.book-appointment-section {
+    height: 100vh;
+    position: relative;
+}
+
+.book-appointment-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("images/image1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+}
+
+.logo-card {
+    display: flex;
+}
+
+.logo-card h3 {
+    font-size: 16px;
+    align-self: center;
+    padding-left: 10px;
+}
+
+.logo-card h3 span {
+    font-size: 8px;
+}
+
+.appointment-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.description-div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.description-div p {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.span {
+    font-weight: bold;
+}
+
+.description-div span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.description-div svg {
+    width: 30px;
+}
+
+.appointment-container button {
+    background-color: rgb(27, 95, 220);
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    width: 300px;
+    display: flex;
+    margin-bottom: 20px;
+    box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.49);
+    -webkit-box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.49);
+}
+
+.appointment-container button svg {
+    margin-left: 10px;
+}
+
+/*----------------------ABOUT SECTION-2--------------- */
+.about-section {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.about-title-card {
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.about-section-div-2 {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.div-2-button-card {
+    align-self: flex-end;
+    flex-grow: 3;
+    margin-right: 10px;
+}
+
+.button-card {
+    border: none;
+    border-radius: 20px;
+    width: 250px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: start;
+    display: flex;
+    box-shadow: 14px 26px 33px -1px rgba(0, 0, 0, 0.29);
+    -webkit-box-shadow: 14px 26px 33px -1px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 14px 26px 33px -1px rgba(0, 0, 0, 0.29);
+}
+
+.button-card svg path {
+    font-weight: bold;
+}
+
+.div-2-description {
+    flex-grow: 1;
+}
+
+.div-2-description p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.div-2-description p span {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+/* AboutSection Responsive */
+@media (max-width:768px) {
+    .about-section-div-2 {
+        flex-direction: column;
+    }
+
+    .div-2-button-card {
+        align-self: flex-start;
+        margin-bottom: 30px;
+    }
+}
+
+/* --------------------SECTION 3-------------*/
+.section-3 {
+    background-image: url('/images/Spacio\ TechTonics\ Consultancy\ V21.png');
+    background-size: cover;
+    height: 100vh;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    padding-top: 50px;
+
+}
+
+.section-3 div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.section-3 div svg {
+    width: 30px;
+}
+
+.section-3 h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    font-style: italic;
+    padding-bottom: 100px;
+}
+
+/* ------------------OUR PRESENCE SECTION-3-------------*/
+.our-presence-section {
+    background-color: #ffffff;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+
+}
+
+.presence-details-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.presence-title-card h1 {
+    font-size: 40px;
+}
+
+.list-card p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.list-card ul {
+    margin-left: 20px;
+}
+
+.list-card ul li {
+    margin-bottom: 5px;
+}
+
+.shadow-card {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 14px 26px 33px -1px rgba(0, 0, 0, 0.29);
+    -webkit-box-shadow: 14px 26px 33px -1px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 14px 26px 33px -1px rgba(0, 0, 0, 0.29);
+}
+
+.shadow-div {
+    padding: 10px;
+    text-align: center;
+}
+
+.shadow-div h1 {
+    font-size: 33px;
+}
+
+.shadow-div div {
+    margin-top: 10px;
+    display: flex;
+}
+
+.shadow-card div span {
+    font-size: 16px;
+}
+
+.shadow-card div svg {
+    width: 20px;
+}
+
+.map-card {
+    flex-grow: 1;
+}
+
+.map-card img {
+    width: 100%;
+}
+
+
+/* -----------------LATEST WORK SECTION-4----------*/
+.latest-work-section {
+    padding: 50px;
+}
+
+.latest-work-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-card h1 {
+    font-size: 30px;
+}
+
+.view-all-card {
+
+    display: flex;
+}
+
+.view-all-card p {
+    align-self: center;
+}
+
+.view-all-card svg {
+    width: 25px;
+    font-weight: bold;
+}
+
+.slide-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.a {
+    flex-grow: 2;
+}
+
+.b {
+    flex-grow: 1;
+}
+
+.image-div {
+    border-radius: 30px;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    height: 400px;
+
+}
+
+.image-div svg {
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.slide-1 {
+    background-image: url('/images/slide-image.jpg');
+    padding-left: 30px;
+}
+
+.slide-2 {
+    background-image: url('/images/image1.png');
+    justify-content: end;
+    padding-right: 30px;
+}
+
+.latest-work-slide-card img {
+    width: 100%;
+}
+
+.slide-link {
+    display: flex;
+    justify-content: center;
+}
+
+.slide-link span {
+    align-self: center;
+}
+
+.slide-link svg {
+    width: 20px;
+}
+/* LatestWorkSection Responsive */
+@media (max-width:768px) {
+    .latest-work-section {
+        padding: 20px;
+    }
+
+    .slide-container {
+        flex-direction: column;
+    }
+
+    .slide-1 {
+        background-image: url('/images/slide-2-sm.jpg');
+    }
+
+    .slide-2 {
+        background-image: url('/images/image1-sm.png');
+    }
+}
+
+/* -------------------INSIGHTS SECTION-6--------- */
+.insights-section {
+    padding: 50px;
+}
+
+.insights-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.slides-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.slide-symbol {
+    align-self: center;
+}
+
+.slide-card {
+    padding: 10px;
+}
+
+.slide-div {
+    height: 300px;
+    margin-bottom: 50px;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 13px 9px 36px -6px rgba(0, 0, 0, 0.62);
+    -webkit-box-shadow: 13px 9px 36px -6px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: 13px 9px 36px -6px rgba(0, 0, 0, 0.62);
+}
+
+.slide-div p {
+    border: 2px solid black;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+}
+
+.slide-details {
+    width: 300px;
+}
+
+.slide-details h4 {
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.slide-details p {
+    font-size: 14px;
+    text-align: end;
+}
+
+
+/* ------------------INOVATE US SECTION-7------------------ */
+.innovate-us-section {
+    background-image: url('/images/section-4-bg.jpg');
+    background-size: cover;
+    color: #ffffff;
+    padding: 10px;
+    border: 3px solid black;
+}
+
+.innovate-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    position: relative;
+}
+
+.ul-2 {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.ul-2 li {
+    list-style-type: none;
+}
+
+.ul-2 li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-container-2 {
+    display: flex;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.innovate-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 50px;
+}
+
+.innovate-card {
+    margin-bottom: 20px;
+}
+
+.innovate-card p {
+    margin-top: 30px;
+}
+
+.innovate-card h1 {
+    font-size: 50px;
+}
+
+.contact-card {
+    padding: 10px;
+}
+
+.keep-in-touch-box {
+    margin-bottom: 20px;
+    text-align: end;
+}
+
+.keep-in-touch-box h1 {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.socail-contact-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.get-social {
+    display: flex;
+    align-items: end;
+}
+
+.get-social svg {
+    margin-left: 10px;
+}
+
+.address-signup {
+    margin-top: 10px;
+}
+
+.address-signup input {
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.address-signup button {
+    padding: 10px;
+    border-radius: 15px;
+    border-style: none;
+    font-weight: bold;
+}
+/* InnovateSection Responsive */
+@media (max-width:768px) {
+    .ul-2 {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+        gap: 0;
+        overflow: hidden;
+    }
+
+    .ul-2 li {
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #innnovateList {
+        transition: all 0.5s;
+    }
+
+    .socail-contact-box {
+        flex-direction: column;
+    }
+
+    .keep-in-touch-box {
+        text-align: center;
+    }
+
+    .address-signup button {
+        margin-top: 10px;
+    }
+}
+
+/* ----------------------Footer Section----------------*/
+.footer-section {
+    background-color: rgb(27, 25, 25);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.logo-title-card p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.company-links p {
+    color: gray;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.call-us {
+    display: flex;
+    align-items: center;
+}
+
+.call-us div {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 10px;
+}
