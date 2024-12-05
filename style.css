@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
 html,
 body {
     height: 100%;
@@ -62,6 +63,7 @@ body {
 .menu-icon i {
     font-size: 30px;
 }
+
 /* Navbar Responsive */
 @media (max-width:600px) {
     .ul {
@@ -149,6 +151,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
 .description-div p {
     font-size: 40px;
     margin-bottom: 20px;
@@ -158,11 +161,13 @@ body {
     font-weight: bold;
     font-style: italic;
 }
+
 .span {
     font-weight: bold;
     text-decoration: underline;
 }
-.description-div i{
+
+.description-div i {
     align-self: center;
 }
 
@@ -172,6 +177,7 @@ body {
     border: none;
     border-radius: 20px;
     padding: 15px;
+    cursor: pointer;
     margin-top: 20px;
     font-weight: bold;
     font-size: 22px;
@@ -180,12 +186,14 @@ body {
     -webkit-box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.49);
     -moz-box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.49);
 }
+
 /* AppointmentSection Responsive */
 @media (max-width:768px) {
-    .description-div{
+    .description-div {
         flex-direction: column;
     }
-    .appointment-container{
+
+    .appointment-container {
         padding: 10px;
         padding-top: 20px;
     }
@@ -217,22 +225,19 @@ body {
     margin-right: 10px;
 }
 
-.button-card {
+.expretise-button {
     border: none;
     border-radius: 20px;
-    width: 250px;
+    cursor: pointer;
     padding: 10px;
     font-size: 20px;
     font-weight: bold;
     text-align: start;
     display: flex;
+    width: 250px;
     box-shadow: 14px 26px 33px -1px rgba(0, 0, 0, 0.29);
     -webkit-box-shadow: 14px 26px 33px -1px rgba(0, 0, 0, 0.29);
     -moz-box-shadow: 14px 26px 33px -1px rgba(0, 0, 0, 0.29);
-}
-
-.button-card svg path {
-    font-weight: bold;
 }
 
 .div-2-description {
@@ -249,6 +254,7 @@ body {
     font-style: italic;
     text-decoration: underline;
 }
+
 /* AboutSection Responsive */
 @media (max-width:768px) {
     .about-section-div-2 {
@@ -455,6 +461,7 @@ body {
 .slide-link svg {
     width: 20px;
 }
+
 /* LatestWorkSection Responsive */
 @media (max-width:768px) {
     .latest-work-section {
@@ -616,8 +623,8 @@ body {
     align-items: end;
 }
 
-.get-social svg {
-    margin-left: 10px;
+.get-social a {
+    cursor: pointer;
 }
 
 .address-signup {
@@ -636,7 +643,9 @@ body {
     border-radius: 15px;
     border-style: none;
     font-weight: bold;
+    cursor: pointer;
 }
+
 /* InnovateSection Responsive */
 @media (max-width:768px) {
     .ul-2 {
@@ -686,9 +695,11 @@ body {
     padding: 20px;
     flex-wrap: wrap;
 }
-.footer-section div{
+
+.footer-section div {
     padding: 10px;
 }
+
 .logo-title-card p {
     margin-top: 10px;
     font-size: 12px;
